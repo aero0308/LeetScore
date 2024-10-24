@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@media (max-width:483px) {
+    .container{
+        padding-top: 1rem;
+    }
+    .user_input_container{
+        flex-direction: column;
+        min-height: 170px;
+        min-width: 330px;
+    }
+    #textBox{
+        max-height: 20%;
+        min-width: 80%;
+    }
+    .score_card_container{
+        flex-direction: column;
+        height: fit-content;
+        min-height: 180px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color:rgb(10, 10, 10);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    min-width: 65%;
+    width: fit-content;
+    background-color: rgb(23, 23, 23);
+    gap: 2rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+.title_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+}
+.title{
+    font-size: 2.6rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(116, 116, 116);
+    display: inline;
+}
+.user_input_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(43, 43, 43);
+    height: 8%;
+    width: 65%;
+    padding-left:1rem;
+    padding-right: 1rem;
+    border-radius: 0.4rem;
+}
+.user_input_container label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(141, 141, 141);
+}
+#textBox{
+    height: 60%;
+    width: 45%;
+    background-color: rgb(76, 76, 76);
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+    outline: none;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
+#search_button{
+    height: 1.7rem;
+    width: 4.9rem;
+    border-style: none;
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: rgb(174, 174, 174);
+    color: rgb(0, 0, 0);
+}
+
+#search_button:hover{
+    background-color: #dedede;
+    color: #000000;
+}
+.progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.circle{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid rgb(137, 137, 137); */
+    border: 5px solid rgb(108, 108, 108);
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    /* color: #d5d5d5; */
+    color: rgb(255, 255, 255);
+    background: conic-gradient(rgb(255, 153, 0) var(--progress-degree,0%), rgb(33, 33, 33) 0%);
+
+}
+.inside_circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95px;
+    width: 95px;
+    background-color: rgb(33, 33, 33);
+    border-radius: 50%;
+}
+.inside_circle span{
+    position: relative;
+    z-index: 2;
+}
+.score_card_container{
+    margin-top: 2rem;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #303030;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.score_card{
+    height: 40px;
+    width: fit-content;
+    background-color: rgb(92, 92, 92);
+    color: #dedede;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <span class="title_box">
+            <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png" alt="">
+            <h1 class="title">LeetScore</h1>
+        </span>
+        
+
+        <div class="user_input_container">
+            <label for="textBox">Enter Your Username: </label>
+            <input type="text" id="textBox">
+            <button id="search_button">Search</button>
+        </div>
+
+        <div class="score_container">
+            <div class="progress">
+                <div class="progress_item">
+                    <div class="easy_progress circle">
+                        <div class="inside_circle">
+                            <span id="easy_label"></span>
+                            <p>Easy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress_item">
+                    <div class="medium_progress circle">
+                        <div class="inside_circle">
+                            <span id="medium_label"></span>
+                            <p>Medium</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress_item">
+                    <div class="hard_progress circle">
+                        <div class="inside_circle">
+                            <span id="hard_label"></span>
+                            <p>Hard</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="score_card_container">
+                    <div class="score_card">
+                        <span class="Points_title">Rank :</span>
+                        <span id="rank"></span>
+                    </div>
+                    <div class="score_card">
+                        <span class="Points_title">Acceptance Rate :</span>
+                        <span id="acceptance_Rate"></span>
+                    </div>
+                    <div class="score_card">
+                        <span class="Points_title">Contribution Points :</span>
+                        <span id="contribution_Points"></span>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
